@@ -11,6 +11,7 @@ public class ExercicioAula11 {
     public static void main(String[] args) {
         tabuada();
         fatorial();
+        pitagoras();
     }
     public static void tabuada(){
         int valor = Integer.parseInt(JOptionPane.showInputDialog("Informo um número inteiro"));
@@ -25,6 +26,13 @@ public class ExercicioAula11 {
         for( int i = 2; i <= valor; i++ ) 
              fat *= i;
         JOptionPane.showConfirmDialog(null, "O fatorial de " + valor + " é igual a " + fat);
+    }
+    
+    public static void pitagoras(){
+        int valor1 = Integer.parseInt(JOptionPane.showInputDialog("Informo um número inteiro A"));
+        int valor2 = Integer.parseInt(JOptionPane.showInputDialog("Informo um número inteiro B"));
+        int valor = (valor1*valor1) + (valor2*valor2);
+        JOptionPane.showConfirmDialog(null, "O valor C é " + valor);
     }
     
 }
