@@ -11,7 +11,11 @@ public class ExercicioAula11 {
     public static void main(String[] args) {
         tabuada();
         fatorial();
+<<<<<<< HEAD
         deltaCalculo();
+=======
+        pitagoras();
+>>>>>>> pitagoras
     }
     public static void tabuada(){
         int valor = Integer.parseInt(JOptionPane.showInputDialog("Informo um número inteiro"));
@@ -46,6 +50,13 @@ public class ExercicioAula11 {
         } else {
                 JOptionPane.showConfirmDialog(null, "Delta não possui raiz!");
         }
+    }
+    
+    public static void pitagoras(){
+        int valor1 = Integer.parseInt(JOptionPane.showInputDialog("Informo um número inteiro A"));
+        int valor2 = Integer.parseInt(JOptionPane.showInputDialog("Informo um número inteiro B"));
+        int valor = (valor1*valor1) + (valor2*valor2);
+        JOptionPane.showConfirmDialog(null, "O valor C é " + valor);
     }
     
 }
